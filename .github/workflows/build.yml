@@ -23,7 +23,7 @@ jobs:
       - name: unzip build wrapper
         run: unzip ./build-wrapper-linux-x86.zip
       - name: run configure
-        run: ./Configure
+        run: ./configure
       - name: run build wrapper
         run: ./build-wrapper-linux-x86/build-wrapper-linux-x86-64 --out-dir build_wrapper_output_directory make clean build_sw
       - name: run sonar scanner
